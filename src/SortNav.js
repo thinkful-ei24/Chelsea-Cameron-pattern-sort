@@ -3,6 +3,7 @@ import React from 'react';
 export default function SortNav(props) {
   return (
     <form>
+      <label>Filter paterns: </label>
       <select onChange={e => props.patternChange(e.target.value)}>
         <option value="">all</option>
         <option value="checked">checked</option>

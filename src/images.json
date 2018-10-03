@@ -4,20 +4,28 @@
     "pattern": "checked"
   },
   {
-    "imageUrl": "images/checked2.jpg",
-    "pattern": "checked"
-  },
-  {
-    "imageUrl": "images/checked3.jpg",
-    "pattern": "checked"
+    "imageUrl": "images/stripes3.jpg",
+    "pattern": "stripes"
   },
   {
     "imageUrl": "images/gingham1.jpg",
     "pattern": "gingham"
   },
   {
+    "imageUrl": "images/checked3.jpg",
+    "pattern": "checked"
+  },
+  {
+    "imageUrl": "images/stripes2.jpg",
+    "pattern": "stripes"
+  },
+  {
     "imageUrl": "images/gingham2.jpg",
     "pattern": "gingham"
+  },
+  {
+    "imageUrl": "images/checked2.jpg",
+    "pattern": "checked"
   },
   {
     "imageUrl": "images/gingham3.jpg",
@@ -25,14 +33,6 @@
   },
   {
     "imageUrl": "images/stripes1.jpg",
-    "pattern": "stripes"
-  },
-  {
-    "imageUrl": "images/stripes2.jpg",
-    "pattern": "stripes"
-  },
-  {
-    "imageUrl": "images/stripes3.jpg",
     "pattern": "stripes"
   }
 ]
