@@ -39,7 +39,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Order quantityUpdate={(pattern, qty) => this.updateQuantity(pattern, qty)}/>
+        <Order swatchOrder={this.state.swatchOrder} quantityUpdate={(pattern, qty) => this.updateQuantity(pattern, qty)}/>
         <SortNav patternChange={e => this.filter(e)} />
         <PatternImages filterBy={this.state.sortBy} />
       </div>
