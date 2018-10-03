@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <div className="App">
         <SortNav patternChange={e => this.filter(e)} />
-        <PatternImages />
+        <PatternImages filterBy={this.state.sortBy} />
       </div>
     );
   }
