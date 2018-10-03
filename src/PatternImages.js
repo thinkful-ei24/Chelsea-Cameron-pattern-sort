@@ -15,5 +15,5 @@ export default function PatternImages(props) {
       />
     ));
 
-  return <div>{patterns}</div>;
+  return <div className="pattern-container">{patterns}</div>;
 }

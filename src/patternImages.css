@@ -2,7 +2,7 @@
   margin: 20px;
 }
 
-.App div {
+.App div.pattern-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
@@ -17,7 +17,7 @@ form {
 }
 
 @media only screen and (min-width: 680px) {
-  .App div {
+  .App div.pattern-container {
     grid-template-columns: repeat(3, 1fr);
   }
   .App {
@@ -27,9 +27,6 @@ form {
 }
 
 @media only screen and (min-width: 768px) {
-  .App div {
-    grid-template-columns: repeat(3, 1fr);
-  }
   .App {
     margin: 50px auto;
     max-width: 760px;
