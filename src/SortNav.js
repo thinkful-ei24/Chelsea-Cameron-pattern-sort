@@ -3,11 +3,11 @@ import React from 'react';
 export default function SortNav(props) {
   return (
     <form>
-      <select>
-        <option>all</option>
-        <option>checked</option>
-        <option>gingham</option>
-        <option>stripes</option>
+      <select onChange={e => props.patternChange(e.target.value)}>
+        <option value="">all</option>
+        <option value="checked">checked</option>
+        <option value="gingham">gingham</option>
+        <option value="stripes">stripes</option>
       </select>
     </form>
   );
