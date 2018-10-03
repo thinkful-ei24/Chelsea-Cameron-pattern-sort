@@ -7,7 +7,7 @@ export default function Order(props){
   return(
     <div className='order-wrapper'>
       <h2>Order Pattern Swatches</h2>
-      <OrderItems />
+      <OrderItems quantityUpdate={props.quantityUpdate}/>
       <OrderTotal />
     </div>
 

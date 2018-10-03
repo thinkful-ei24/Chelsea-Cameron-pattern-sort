@@ -12,7 +12,8 @@ export default function OrderItems(props){
     return (
       <fieldset>
       <label forHtml={pattern.name}>{`${pattern.name}: $${pattern.price}`}</label>
-      <input id={pattern.name} type='number' min={0} max={5} />
+      <input id={pattern.name} type='number' min={0} max={5} 
+        onChange={(e) => props.quantityUpdate(e.target.id, e.target.value)}/>
       </fieldset>
     );
   })

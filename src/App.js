@@ -10,15 +10,15 @@ class App extends Component {
     super();
     this.state = {
       sortBy: '',
-      swatchOrder: [{name:'gingham',
-      price: 10,
+      swatchOrder: {gingham: 
+      {price: 10,
       qty: 0},
-      {name:'stripes',
-      price: 5,
+      stripes: 
+      {price: 5,
       qty: 0},
-      {name:'checked',
-      price: 2,
-      qty: 0}]
+      checked:
+      {price: 2,
+      qty: 0}}
     };
   }
 
@@ -28,10 +28,18 @@ class App extends Component {
     });
   }
 
+  updateQuantity(pattern, qty){
+    const newSwatch = {...this.state.swatchOrder};
+    newSwatch[pattern].qty = qty;
+    this.setState({
+      swatchOrder: newSwatch
+    })
+  };
+
   render() {
     return (
       <div className="App">
-        <Order />
+        <Order quantityUpdate={(pattern, qty) => this.updateQuantity(pattern, qty)}/>
         <SortNav patternChange={e => this.filter(e)} />
         <PatternImages filterBy={this.state.sortBy} />
       </div>
